@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fzu.beeradviser.FindBeerActivity">
+
+    <Spinner
+        android:id="@+id/beer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/beer_list" />
+
+    <Button
+        android:id="@+id/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/beer_list"
+        android:layout_alignStart="@+id/beer_list"
+        android:layout_below="@+id/beer_list"
+        android:onClick="onClickFinder"
+        android:text="@string/find_beer" />
+
+    <TextView
+        android:id="@+id/beer_viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_beer"
+        android:layout_alignStart="@+id/find_beer"
+        android:layout_below="@+id/find_beer"
+        android:text=""
+        tools:text="@string/beer_viewer" />
+
+</RelativeLayout>

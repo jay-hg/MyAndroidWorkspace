@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BeerAdviser</string>
+    <string name="find_beer">Find Beer!</string>
+    <string name="beer_viewer"></string>
+
+    <string-array name="beer_list">
+        <item>雪津</item>
+        <item>百威</item>
+        <item>青岛</item>
+    </string-array>
+</resources>
