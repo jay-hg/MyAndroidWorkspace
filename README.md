@@ -1,28 +1,28 @@
-# Ñ¡ÔñÆ¡¾Æ
-¹¦ÄÜ£º´ÓÏÂÀ­±íµ¥Ñ¡ÔñÒ»Ïî£¬°´button£¬ÏÔÊ¾ÔÚ±êÇ©ÉÏ
-ÓÃµ½¿Ø¼ş£ºSpinner TextView Button
-string.xmlµÄĞŞ¸Ä£ºstring string-array entiesÊôĞÔÉèÖÃ@array/list
-¾ÓÖĞ¶ÔÆë£ºlayout_centerHorizontal
-onClickÊÂ¼şÏìÓ¦ public void onClickFinder(View view)
+# é€‰æ‹©å•¤é…’
+åŠŸèƒ½ï¼šä»ä¸‹æ‹‰è¡¨å•é€‰æ‹©ä¸€é¡¹ï¼ŒæŒ‰buttonï¼Œæ˜¾ç¤ºåœ¨æ ‡ç­¾ä¸Š  
+ç”¨åˆ°æ§ä»¶ï¼šSpinner TextView Button  
+string.xmlçš„ä¿®æ”¹ï¼šstring string-array entieså±æ€§è®¾ç½®@array/list  
+å±…ä¸­å¯¹é½ï¼šlayout_centerHorizontal  
+onClickäº‹ä»¶å“åº” public void onClickFinder(View view)  
 
 # Intent
-¹¦ÄÜ£º·¢ËÍĞÅÏ¢µ½ÁíÒ»¸öActivity
-ÓÃµ½¿Ø¼ş£ºEditText Button
-Ê¹ÓÃIntent Æä¹¹Ôìº¯ÊıÓĞ¼¸ÖÖ£¿
-put&get Extra
-startActivity(intent);
-ÉèÖÃĞÅÏ¢¸ñÊ½£ºintent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT,str);
-ÓÃAction; new Intent(Intent.ACTION_SEND);
-ÈçºÎ×Ô¼ºÑ¡Ôñ¿ªÆôµÄActivity?
-Intent.createChooser(intent,title_text);¿ÉÒÔ·µ»ØÒ»¸öĞÂµÄIntent
+åŠŸèƒ½ï¼šå‘é€ä¿¡æ¯åˆ°å¦ä¸€ä¸ªActivity  
+ç”¨åˆ°æ§ä»¶ï¼šEditText Button  
+ä½¿ç”¨Intent å…¶æ„é€ å‡½æ•°æœ‰å‡ ç§ï¼Ÿ  
+put&get Extra  
+startActivity(intent);  
+è®¾ç½®ä¿¡æ¯æ ¼å¼ï¼šintent.setType("text/plain");  
+        intent.putExtra(Intent.EXTRA_TEXT,str);  
+ç”¨Action; new Intent(Intent.ACTION_SEND);  
+å¦‚ä½•è‡ªå·±é€‰æ‹©å¼€å¯çš„Activity?  
+Intent.createChooser(intent,title_text);å¯ä»¥è¿”å›ä¸€ä¸ªæ–°çš„Intent  
 
-# ¼ÆÊ±Æ÷
-Í¨¹ı¼ÆÊ±Æ÷ÁË½âActivityµÄÉúÃüÖÜÆÚ
-ÔõÃ´ÉèÖÃ×Ö¸ß£ºtextSize
-»­ºÃ½çÃæ£¬ÉèÖÃonClickº¯Êı
-»Ø¹ËActivityµÄÉúÃü¹ı³Ì
-create start pause resume stop saveInstanceState destroy
-ÈçºÎÉèÖÃ¼ÆÊ±Æ÷£¿
-new Ò»¸öhandler; handler.post(runnable);
-runnableÖØÔØrun·½·¨£¬ÆäÖĞÓĞhandler.postDelayed
+# è®¡æ—¶å™¨
+é€šè¿‡è®¡æ—¶å™¨äº†è§£Activityçš„ç”Ÿå‘½å‘¨æœŸ  
+æ€ä¹ˆè®¾ç½®å­—é«˜ï¼štextSize  
+ç”»å¥½ç•Œé¢ï¼Œè®¾ç½®onClickå‡½æ•°  
+å›é¡¾Activityçš„ç”Ÿå‘½è¿‡ç¨‹  
+create start pause resume stop saveInstanceState destroy  
+å¦‚ä½•è®¾ç½®è®¡æ—¶å™¨ï¼Ÿ  
+new ä¸€ä¸ªhandler; handler.post(runnable);  
+runnableé‡è½½runæ–¹æ³•ï¼Œå…¶ä¸­æœ‰handler.postDelayed  
