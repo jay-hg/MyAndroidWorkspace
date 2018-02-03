@@ -1,4 +1,4 @@
-# 选择啤酒
+﻿# 选择啤酒
 功能：从下拉表单选择一项，按button，显示在标签上  
 用到控件：Spinner TextView Button  
 string.xml的修改：string string-array enties属性设置@array/list  
@@ -26,3 +26,19 @@ create start pause resume stop saveInstanceState destroy
 如何设置计时器？  
 new 一个handler; handler.post(runnable);  
 runnable重载run方法，其中有handler.postDelayed  
+
+# Starbuzz
+Drink类：name description imageResourceId  
+1.TopLevel  
+加图片 加ListView 设置onItemClickListener  
+2.Category  
+继承ListActivity getListView()可以获得一个ListView  
+'ArrayAdapter<Drink> listAdapter = new ArrayAdapter<Drink>(
+                this,
+                android.R.layout.simple_list_item_1,
+                Drink.drinks
+        );'
+设置listener  
+putExtra(,(int)id)
+3.Detail  
+设置图片和text
